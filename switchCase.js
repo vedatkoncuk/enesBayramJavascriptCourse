@@ -65,4 +65,3 @@ console.log(typeof value);
 console.log(value);
 
 alert(value); */
-
