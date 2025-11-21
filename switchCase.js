@@ -50,3 +50,19 @@ switch (işlem) {
     break;
 }};
  */
+
+/* let sonuc = String(33);
+console.log(sonuc);
+console.log(typeof sonuc); */
+/* 
+let result = prompt('Enter a value from 5 to 100');
+console.log(result);
+console.log(typeof result);
+
+let value = Number('Enter a value');
+console.log(value);
+console.log(typeof value);
+console.log(value);
+
+alert(value); */
+
