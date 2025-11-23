@@ -32,5 +32,5 @@ console.log(silinenEleman); */
 
 
 /* SPLİCE METOT */
-cars.splice(1,0,'Vedat');
-console.log(cars);
+/* cars.splice(1,0,'Vedat');
+console.log(cars); */
