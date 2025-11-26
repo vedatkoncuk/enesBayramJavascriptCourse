@@ -140,6 +140,14 @@ rowMade();
   rowMade();
  } else {
   alert('The book you entered is not available in the library');
- }
+ };
+ 
 
-       
+/* 
+console.log(Math.floor(Math.random() * 100));
+
+let tarih = new Date();
+console.log(tarih);
+console.log()
+tarih.setDate(5);
+console.log(tarih); */
