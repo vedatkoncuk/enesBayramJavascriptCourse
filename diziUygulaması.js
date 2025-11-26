@@ -101,12 +101,45 @@ function rowMade(){
   let satir = '';
   for(let i = 0; i < rows.length; i++){
     for(let j = 0; j < 5; j++){
-      satir += '|' + (rows[i][j].goster) + '|';
+      satir += '|' + (rows[i][j].goster ? rows[i][j].cod : '---') ;
     }
     console.log(satir);
+    console.log('--------------------');
     satir = '';
-  }     
+  } 
+};
+
+function kodBul(kitapIsmi){
+  let rafKod = null;
+  books.forEach(function (book) {
+    if(book.isim.toUpperCase().includes(kitapIsmi.toUpperCase(),0)){
+    rafKod = book.raf;
+  }
+  });
+  return rafKod;
+};
+
+function rafGoster(rafKod){
+  for (let i= 0; i< rows.length; i++) {
+    for (let j = 0; j < 5; j++) {
+      if (rows[i][j].cod == rafKod) {
+        rows[i][j].goster = true;
+        break;
+      }
+    }
+  }
 }
 
-            
+rowMade();
+
+ let kitapIsmi = prompt('Pleas enter the book you want to find');
+ let rafKod = kodBul(kitapIsmi);
+
+ if (rafKod != null) {
+  rafGoster(rafKod);
+  rowMade();
+ } else {
+  alert('The book you entered is not available in the library');
+ }
+
        
