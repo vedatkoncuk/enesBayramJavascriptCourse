@@ -141,7 +141,7 @@ rowMade();
  } else {
   alert('The book you entered is not available in the library');
  };
- 
+
 
 /* 
 console.log(Math.floor(Math.random() * 100));
@@ -151,3 +151,5 @@ console.log(tarih);
 console.log()
 tarih.setDate(5);
 console.log(tarih); */
+
+const todo = document.querySelector('.list-gorup')
