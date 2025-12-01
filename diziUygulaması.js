@@ -20,7 +20,10 @@ products.forEach((element) =>{
   console.log(element);
 }); */
 
-let book1 = {
+
+//---------- KÜTÜPHANE PROJESİ ----------
+
+/* let book1 = {
   isim: 'Her seyi düşünme',
   yazar: 'Anne Bogel',
   fiyat: 25,
@@ -140,7 +143,7 @@ rowMade();
   rowMade();
  } else {
   alert('The book you entered is not available in the library');
- };
+ }; */
 
 
 /* 
@@ -152,4 +155,54 @@ console.log()
 tarih.setDate(5);
 console.log(tarih); */
 
-const todo = document.querySelector('.list-gorup')
+
+/* const todo = document.querySelector('.list-gorup')
+
+let value = row11.children[0].children[3].children[2].textContent = 'Todo list elemnai değisti şu an!';
+console.log(value); */
+
+/* const todoList = document.querySelector('.list-group');
+
+const todo = document.createElement('li');
+const todoLink = document.createElement('a');
+const i = document.createElement('i');
+
+todo.className = 'list-group-item d-flex';
+todo.innerHTML = 'Todo 5';
+
+todoLink.href = '#';
+todoLink.className = 'delete-item';
+
+i.className = 'fa fa-remove';
+
+todoLink.appendChild(i);
+todo.appendChild(todoLink);
+todoList.appendChild(todo);
+
+
+const todo2 = document.createElement('li');
+const todoLink2  = document.createElement('a');
+const i2 = document.createElement('i');
+
+todo2.className = 'list-group-item2 d-flex';
+todoLink2.className = 'delete-item2';
+i2.className = 'fa fa-remove2';
+
+i2.href = '#';
+todo2.innerHTML = 'Todo 6';
+
+todo2.appendChild(todoLink2);
+todoLink2.appendChild(i2);
+todoList.appendChild(todo2);
+
+const todoChild = todoList.children;
+console.log(todoChild);
+ */
+
+
+document.addEventListener('keypress', run);
+
+
+function run(e){
+  console.log(e.key);
+}
