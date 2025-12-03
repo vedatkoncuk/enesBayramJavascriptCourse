@@ -15,7 +15,7 @@ set.delete('4');
 
 console.log(set.size); */
 
-function write(firstName, lastName){
+/* function write(firstName, lastName){
   console.log(`İsim : ${firstName} ${lastName}`);
 }
 
@@ -26,4 +26,4 @@ function writee(){
 }
 
 writee();
-
+ */
