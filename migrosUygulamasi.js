@@ -10,10 +10,17 @@ class migrosUygulamsai{
   calculate(){
     let amountToPaid = 0;
     if (this.checkTheProducts(this.products)) {
-      // Cart is full
+      if(this.isThereCard){
+              // Cart is full
       this.products.forEach(element => {
-        amountToPaid = (element.price * ((100-this.discountAverage)) / 100);
+      amountToPaid = (element.price * ((100-this.discountAverage)) / 100);
       });
+        
+      }else{
+        this.products.forEach((element)=>{
+          amountToPaid += element.price;
+        })
+      }
     }else{
       alert('You must buy at least one product')
     }
@@ -22,21 +29,21 @@ class migrosUygulamsai{
 }
 
 checkTheProducts(products)
-{
-  if(products !== null && products.length > 0) {
+{ let result = false;
+  if(products != null && products.length > 0) {
     return true;
+  }else
+  {
+    result = false;
   }
+  
 }
 
+/* setTimeout(() => {
+  console.log('Sure doldu ve calisti')
+}, 1000);
 
+setTimeout(() => {
+  
+}, 500); */
 
-function welcome(isThereCard) {
-  alert(`Migros'a hoşgeldiniz 
-Money Kartiniz var mi ?
-1-Evet
-2-Hayir`)};
-
-
-
-
-welcome();
