@@ -1,4 +1,4 @@
-let message = `Migros'a hoşgeldiniz 
+/* let message = `Migros'a hoşgeldiniz 
 Money Kartiniz var mi ?
 1-Evet
 2-Hayir`;
@@ -39,4 +39,4 @@ if(result){
   amountToPaid = customer.calculate();
   alert(`Ödenecek Tutar ${amountToPaid}`)
 }
-
+ */

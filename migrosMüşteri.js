@@ -1,4 +1,4 @@
-class Musteri extends migrosUygulamsai{
+/* class Musteri extends migrosUygulamsai{
   constructor(firstName, lastName, isThereCard,products){
     super(firstName, lastName, isThereCard, products);
   }
@@ -6,4 +6,4 @@ class Musteri extends migrosUygulamsai{
   calculate(){
     super.calculate()
   }
-}
+} */

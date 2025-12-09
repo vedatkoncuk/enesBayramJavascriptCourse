@@ -1,4 +1,4 @@
-class migrosUygulamsai{
+/* class migrosUygulamsai{
   discountAverage = 20;
   constructor(firstName, lastName, isThereCard, products){
     this.firstName = firstName,
@@ -37,7 +37,7 @@ checkTheProducts(products)
     result = false;
   }
   
-}
+} */
 
 /* setTimeout(() => {
   console.log('Sure doldu ve calisti')
