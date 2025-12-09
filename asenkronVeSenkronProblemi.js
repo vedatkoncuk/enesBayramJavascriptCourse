@@ -155,11 +155,73 @@ getUsers("https://jsonplaceholder.typicode.com/users/3")
 
 
 
-  function getData(url){
+/*   function getData(url){
     fetch(url)
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.log(error))
   }
 
-  getData("https://jsonplaceholder.typicode.com/albums");
+  getData("https://jsonplaceholder.typicode.com/albums"); */
+
+
+
+/*   async function hello(){
+    return 'Hello World'
+  }
+
+  hello()
+  .then((res) => console.log(res)); */
+
+
+
+/* document.querySelector('#button').addEventListener('click',()=>{
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then((response) => response.json())
+  .then((post) =>{
+    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`)
+    .then((response) => response.json())
+    .then((comments) => console.log(comments))
+  })
+}); */
+
+
+
+/*   async function showData(url) {
+    fetch(url)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+  }
+
+  showData("https://jsonplaceholder.typicode.com/posts")
+  .then((response)=> response.json())
+  .then((data)) */
+
+
+
+/*   document.querySelector('#button').addEventListener('click',async () =>{
+    let responsePost = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+    let post = await responsePost.json();
+
+    let responseComment = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`)
+    let comments = await responseComment.json();
+
+    console.log(comments);
+  }) */
+
+
+
+document.querySelector('#button').addEventListener('click',async () =>{
+  const post =await (await fetch('https://jsonplaceholder.typicode.com/posts/1')).json();
+  console.log(post);
+  const comments =await (await (fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`))).json();
+  console.log(comments);
+})
+
+
+
+
+
+
+
+  
