@@ -101,7 +101,7 @@ readStudents('students.json')
 .catch((err) => console.log('There is a error', err)) */
 
 
-function getUsers(url){
+/* function getUsers(url){
   return new Promise((resolve, reject) =>{
   const xhr = new XMLHttpRequest();
   try {
@@ -118,6 +118,8 @@ function getUsers(url){
   xhr.send();
   });
 }
+
+ 
 
 function getUserId(url){
   return new Promise((resolve, reject) =>{
@@ -149,4 +151,15 @@ getUsers("https://jsonplaceholder.typicode.com/users/3")
 })
 .finally(() => {
   
-})
+}) */
+
+
+
+  function getData(url){
+    fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error))
+  }
+
+  getData("https://jsonplaceholder.typicode.com/albums");
